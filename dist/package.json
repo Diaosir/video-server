@@ -1,0 +1,13 @@
+{
+  "name": "git-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest  --watchAll",
+    "dev": "tsc -w"
+  },
+  "bin": { "my-git": "./index.js" },
+  "license": "ISC",
+  "dependencies": { "slowly": "^1.2.1" }
+}

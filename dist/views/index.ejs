@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  </head>
+  <style>
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    .container{
+        padding: 20px 10px 20px 0;
+    }
+    .container a{
+        display: block;
+        margin-bottom: 10px;
+    }
+    ul{
+      list-style: none;
+    }
+    ul li {
+      float: left;
+      width: 190px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      margin-left: 10px; 
+    }
+    ul li .name{
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-wrap: none;
+    }
+    ul li a {
+      width: 100%;
+      height: 100px;
+    }
+    ul li img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <ul>
+        <%for(var i = 0;i<list.length;i++){%>
+          <li>
+            <a href='<%= list[i].url %>'>
+              <img src="<%= list[i].screenshot %>"/>
+            </a>
+            <p class="name"><%= list[i].basename %></p>
+          </li>
+        <%}%>
+      </ul>
+
+      </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "video-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest  --watchAll",
+    "dev": "tsc -w"
+  },
+  "bin": {
+    "video-server": "./dist/index.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.12.30",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2"
+  },
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs-extra": "^9.0.0",
+    "glob": "^7.1.6",
+    "koa": "^2.11.0",
+    "koa-router": "^8.0.8",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.1",
+    "slowly": "^1.2.1"
+  }
+}
